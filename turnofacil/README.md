@@ -1,6 +1,6 @@
 # TurnoFácil
 
-Portfolio demo de una aplicación responsive de reservas para profesionales y pequeños negocios. El sitio público presenta un estudio ficticio; el panel administrativo es una vista de ejemplo.
+Demo de una aplicación responsive de reservas para profesionales y pequeños negocios. El sitio público presenta un estudio ficticio; el panel administrativo es una vista de ejemplo.
 
 ## Funcionalidades
 
@@ -26,10 +26,3 @@ HTML5 semántico, CSS3 y JavaScript vanilla. No requiere paquetes ni proceso de 
 
 Los servicios, profesionales y datos ficticios iniciales están en `js/data.js`. Los horarios de trabajo ilustrativos se muestran en `admin.html`; la disponibilidad de reservas se calcula en `js/main.js`. La fecha se interpreta en la zona local del navegador.
 
-## Limitaciones de la demo
-
-- **No procesa reservas reales ni envía correos, mensajes o notificaciones.** La confirmación solo aparece en pantalla.
-- Las reservas y cambios se guardan en `localStorage` del navegador. No se sincronizan entre dispositivos o usuarios y pueden borrarse al limpiar los datos del sitio.
-- El panel no tiene autenticación y no es adecuado para administrar información real.
-- La comprobación de solapamientos se hace en el almacenamiento local y no es atómica entre pestañas; no garantiza exclusión concurrente. Para producción se requiere backend y base de datos con una operación atómica que reserve el horario, autenticación segura para el personal, autorización del lado del servidor y controles de privacidad.
-- Servicios y profesionales son ejemplos; los datos de contacto son ficticios.
